@@ -97,3 +97,15 @@
 
 // Bitbucket
 // Permite repositórios privados e gratuitos. https://bitbucket.org/product
+
+// Github Pages
+
+//Criar Repositório
+// O nome deve ser seuusuario.github.io
+
+// HTML Simples
+// O site só irá funcionar em html/css/js simples, sem linguagem de servidor
+
+// Qualquer projeto
+// Qualquer projeto poderá ter uma página para o mesmo. Vá em Settings > GitHub Pages >
+// Seleciona branch e salve. E acesse seuusuario.github.io/repositorio/

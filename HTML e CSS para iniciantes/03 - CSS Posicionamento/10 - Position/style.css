@@ -1,0 +1,78 @@
+.fixed h1 {
+  border: 2px solid #ccc;
+  padding: 20px 20px 300px 20px;
+}
+
+.fixed p {
+  background: #e7e7e7;
+  border: 1px solid #111;
+  padding: 20px;
+  font-size: 20px;
+  margin: 0;
+}
+
+.fixo {
+  position: fixed;
+  right: 20px;
+  left: 20px;
+  bottom: 20px;
+}
+
+.btns {
+  display: inline-block;
+  margin: 0 5px;
+  border-radius: 6px;
+  padding: 10px;
+  text-decoration: none;
+  border: 2px solid #222;
+  font-size: 20px;
+  color: #82e;
+  background: chartreuse;
+}
+
+.relative {
+  height: 1200px;
+}
+
+.relative div {
+  border: 2px solid #ccc;
+  margin-top: 40px;
+  padding: 20px 20px 40px 20px;
+  position: relative;
+}
+
+.relative span {
+  background: #ccc;
+  border: 2px solid black;
+  padding: 10px;
+  /*position: relative; Position relative continua ocupando o espaço dele dentro da box*/
+  position: absolute; /* Para usarmos o position absolute precisamos usar o pai como position relative */
+  border-radius: 6px;
+  top: -23px;
+}
+
+.z-index h1 {
+  margin: 0px;
+  padding: 10px;
+  background: lightblue;
+}
+
+.z-index .index1 {
+  position: relative;
+  top: 30px;
+  background: greenyellow;
+  z-index: 1;
+}
+
+.z-index .index2 {
+  position: absolute;
+  top: 60px;
+  background: lightcoral;
+  z-index: -1;
+}
+
+.z-index .index3 {
+  background: dodgerblue;
+  z-index: 100;
+  position: relative;
+}

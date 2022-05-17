@@ -1,0 +1,14 @@
+p {
+  font-size: 2rem;
+  font-family: Georgia;
+  font-weight: 700;
+  font-style: italic;
+  line-height: 1.3;
+  text-decoration: line-through;
+  text-transform: uppercase;
+  text-indent: 2rem;
+  text-align: left;
+  /* eixos (x)horizontal, (y)vertical e blur(espalhamento) */
+  text-shadow: 5px 5px 10px gray;
+  letter-spacing: 0.1rem;
+}

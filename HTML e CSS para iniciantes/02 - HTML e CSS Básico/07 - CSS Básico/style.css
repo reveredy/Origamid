@@ -1,0 +1,20 @@
+/*
+CSS Anatomia
+
+Seletor - a
+Seleciona o elemento(s) que deve ser estilizado
+
+Bloco CSS - { }
+Engloba as propriedades {} que serão aplicadas ao seletor.
+
+Propriedade - color:
+Define o que será alterado.
+
+Valor - black;
+Define o valor do novo estilo
+*/
+
+a {
+  color: black;
+  text-decoration: none;
+}

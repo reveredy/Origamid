@@ -1,0 +1,125 @@
+<!-- 
+    Landmarks
+
+    Tags que marcam pontos de referência (landmarks) foram introduzidas
+    no lançamento do HTML5. Antes era utilizado o atributo role.
+
+    Visualmente o efeito que essas tags possuem é similar ao das div's,
+    elas não mudam em nada o conteúdo/apresentação. (section altera os headers).
+
+    <main> Para o conteúdo principal do site
+    <nav> Para navegação
+    <section> e <article> Para definir uma região do site
+    <aside> Uma região do site para conteúdo extra, geralmente utilizado nas laterais
+    <footer> Rodapé do site
+    <header> Cabeçalho do site
+
+    ***main***
+    A tag <main></main> marca o conteúdo principal da página
+
+    -Exemplos
+    Blog: conteúdo do artigo. Comércio eletrônico: descrição/imagem/preço do produto.
+
+    Observação
+    Utilize uma por página
+
+    ***Navegação***
+
+    A tag <nav></nav> marca um bloco de navegação
+
+    Exemplos:
+    Geralmente utilizado para a navegação primária e secundária do site.
+
+    Observação
+    Evite o uso de diversas tags nav, use apenas para a navegação essencial.
+
+    ***article***
+    A tag article representa uma região do site que é autoexplicativa
+    (não precisa do restante do site para fazer sentido). Geralmente
+    deve conter um título(h's).
+
+    -Exemplos
+    Lista de produtos do site, um artigo, post na rede social e outros.
+
+    -aria-label
+    Título da região visualmente escondido, mas lido pelo leitor
+    de tela.
+    
+    -aria-labelledby
+    Caso o título exista na tela, marque o mesmo com um id e use este
+    atributo para criar uma relação entre eles.
+
+    -Observação
+    Oficialmente não cria uma landmark, mas muitos leitores de tela
+    utilizam ela como referência para marcar regiões do site.
+    A tag é até mais consistente do que a section para marcar
+    regiões do site.
+
+    link da fonte: https://www.smashingmagazine.com/2020/01/html5-article-section/
+
+    ***aside***
+
+    A tag aside é utilizada para marcar conteúdo complementar ao
+    principal do site.
+
+    -Exemplos
+    Lista de posts mais visitados, informações extras como a descrição
+    de um termo
+    usado no artigo e mais
+
+    ***header***
+
+    A tag <header></header> marca o cabeçalho do site(banner),
+    onde geralmente estão presentes as marca, navegação do site
+    e as vezes informações introdutória.
+
+    -Exemplos
+    Pode também ser utilizada para marcar o cabeçalho de regiões
+    como o título de um artigo, data, autor e outras informações.
+
+    -Observação
+    Apenas cria uma landmark se não estiver dentro do main, section
+    article ou aside
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Landmarks</title>
+</head>
+
+<body>
+    <header>
+        <nav aria-label="primária">
+            <a href="/">Sobre</a>
+            <a href="/">Produtos</a>
+            <a href="/">Contato</a>
+            <a href="/">Login</a>
+        </nav>
+    </header>
+    <main>
+        <h1>Nimbus Stark</h1>
+        <p>
+            A Nimbus Stark é a melhor Bikcraft
+        </p>
+    </main>
+    <article aria-labelledby="sobrebike">
+        <h2 id="sobrebike">Sobre a Bikcraft</h2>
+        <p>A empresa foi fundada em 2014</p>
+    </article>
+    <section aria-label="Sobre a Surfbot">
+        <h2>Sobre a Surfbot</h2>
+        <p>A empresa foi fundada em 2014</p>
+    </section>
+    <aside>
+        <a href="/">Outros posts</a>
+        <a href="/">Posts mais visualizados</a>
+    </aside>
+    <footer>
+        <p>Alguns direitos reservados</p>
+    </footer>
+</body>
+
+</html>

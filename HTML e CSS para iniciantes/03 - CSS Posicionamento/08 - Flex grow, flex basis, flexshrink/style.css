@@ -1,0 +1,22 @@
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+h2 {
+  background: #e7e7e7;
+  border: 1px solid #d7d7d7;
+  padding: 20px;
+  margin: 0;
+  /*flex-grow: 1; Pega o espaço disponivel na tela e distribui dentro de cada elemento */
+  /* flex-basis: auto; */
+  /* flex-shrink: 1; 0 não permite que o container diminua de tamanho, o padrão é 1 que permite diminuir o container */
+  /* Podemos substituir por flex se usarmos os 3 ao mesmo tempo */
+  flex: 1;
+  /*Significa: 
+  flex-grow: 1; (O elemento pode crescer o tamanho da box)
+  flex-shrink: 1; (O elemento pode diminuir o tamanho da box)
+  flex-basis: 0; (O espaço distribuido dentro dos elementos deve ser igual para todos)
+  */
+}

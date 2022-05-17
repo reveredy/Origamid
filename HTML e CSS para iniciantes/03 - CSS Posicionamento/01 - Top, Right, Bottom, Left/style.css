@@ -1,0 +1,18 @@
+span {
+  display: inline-block;
+  background: #ddd;
+}
+
+span {
+  padding: 30px;
+  padding: 20px 40px;
+  padding: 40px 100px 200px 10px;
+  border: solid blue;
+  /* border width recebe somente valores */
+  border-width: 10px 20px 15px 4px;
+}
+
+h1 {
+  writing-mode: vertical-rl;
+  margin-inline-start: 20px;
+}

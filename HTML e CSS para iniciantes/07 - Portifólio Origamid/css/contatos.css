@@ -1,0 +1,89 @@
+.contato-bg {
+  background: #000;
+}
+
+.contato {
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+.contato p {
+  grid-column: 1;
+  color: #ccc;
+  font-weight: 1.5rem;
+  line-height: 32px;
+  max-width: 40ch;
+}
+
+.contatos {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contatos a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 2rem;
+  line-height: 40px;
+}
+
+.contatos a:hover {
+  color: dodgerblue;
+}
+
+.foto-rede {
+  max-width: 38px;
+}
+
+#linkedin {
+  display: flex;
+  gap: 15px;
+}
+
+#instagram {
+  display: flex;
+  gap: 15px;
+}
+
+#github {
+  display: flex;
+  gap: 15px;
+}
+
+#whats {
+  display: flex;
+  gap: 15px;
+}
+
+@media (max-width: 768px) {
+  .contatos a {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 550px) {
+  .contato {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contato p {
+    max-width: 80%;
+  }
+}
+
+@media (min-width: 320px) {
+  .contato p {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  .contatos {
+    gap: 10px;
+  }
+
+  .contatos a {
+    font-size: 1rem;
+  }
+}

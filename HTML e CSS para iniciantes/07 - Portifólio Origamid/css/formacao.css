@@ -1,0 +1,145 @@
+.formacao-bg {
+  background: var(--textos);
+}
+
+#form {
+  grid-column: 1;
+  color: #000;
+}
+
+.formacao-itens {
+  grid-column: 2;
+  display: grid;
+  gap: 30px;
+}
+
+.sobre-formacao {
+  max-width: 45ch;
+  color: #a3a3a3;
+  font-size: 1.5rem;
+  line-height: 32px;
+}
+
+.formacao-item {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background: #000;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.formacao-item-curso h2 {
+  color: #a3a3a3;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  line-height: 20px;
+}
+
+.formacao-item-local {
+  color: #a3a3a3;
+  font-size: 1.125rem;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.formacao-item-curso p {
+  color: #fff;
+  font-size: 1.125rem;
+  line-height: 25px;
+}
+
+.formacao-curso {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.foto-curso {
+  grid-column: 1 / -1;
+  display: flex;
+  align-items: flex-end;
+  gap: 10px;
+}
+
+.formacao-curso h3 {
+  grid-column: 1;
+  color: #8f8f8f;
+  font-size: 0.875rem;
+  font-weight: 700;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.formacao-cursos {
+  grid: 2;
+  color: #fff;
+  font-size: 1.125rem;
+  line-height: 20px;
+  padding-left: 35px;
+}
+
+.formacao-cursos p:not(:first-child) {
+  margin-top: 20px;
+}
+
+.cursos-carga_horaria {
+  grid: 2;
+  color: #8f8f8f;
+  font-size: 1.125rem;
+  text-align: end;
+}
+
+.cursos-carga_horaria p:not(:first-child) {
+  margin-top: 18px;
+}
+
+.formacao-idiomas {
+  display: grid;
+  gap: 20px;
+}
+
+.formacao-idiomas p {
+  padding-left: 35px;
+  color: #fff;
+  font-size: 1.125rem;
+}
+
+.formacao-idiomas p span {
+  color: #8f8f8f;
+}
+
+.foto-idiomas {
+  display: flex;
+  gap: 10px;
+  color: #8f8f8f;
+  text-transform: uppercase;
+}
+
+@media (max-width: 768px) {
+  .formacao {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 30px;
+    align-items: center;
+  }
+
+  #form {
+    font-size: 5rem;
+    text-align: center;
+    max-width: initial;
+  }
+}
+
+@media (max-width: 425px) {
+  #form {
+    font-size: 3.5rem;
+    max-width: initial;
+  }
+
+  .sobre-formacao {
+    font-size: 1rem;
+    line-height: 1.2;
+  }
+}

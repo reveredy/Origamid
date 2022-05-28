@@ -1,0 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&display=swap");
+@import url("./geral.css");
+@import url("./header.css");
+@import url("./apresentacao.css");
+@import url("./experiencia.css");
+@import url("./formacao.css");
+@import url("./contatos.css");
+@import url("./footer.css");
+
+:root {
+  --textos: #141414;
+  --cinza-claro: #525252;
+  --cinza-titulo: #e0e0e0;
+  --background-experiencias: #f0f0f0;
+  --container: 1200px;
+}

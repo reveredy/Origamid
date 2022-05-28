@@ -1,0 +1,149 @@
+#exp {
+  grid-column: 1;
+  color: var(--cinza-titulo);
+}
+
+.experiencia-conteudo {
+  grid-column: 2;
+}
+
+#experiencia-conteudo-paragrafo {
+  font-size: 1.2rem;
+  line-height: 32px;
+  font-weight: 700;
+  max-width: 45ch;
+}
+
+.lista-experiencia {
+  display: flex;
+}
+
+.experiencias {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 40px;
+  background-color: var(--background-experiencias);
+  padding: 25px;
+  border-radius: 5px;
+  gap: 10px 30px;
+  position: relative;
+}
+
+#ano-proj {
+  display: block;
+  position: absolute;
+  top: 27px;
+  left: -60px;
+}
+
+.experiencias::before {
+  content: "";
+  display: block;
+  width: 4px;
+  height: 20px;
+  background: linear-gradient(#b6f829, #67dd0a);
+  position: absolute;
+  left: -4px;
+  top: 25px;
+}
+
+.experiencias a {
+  display: block;
+  background: #fff;
+  text-align: center;
+  padding: 10px;
+  margin-top: 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+.experiencia-subtitulo {
+  font-size: 1.125rem;
+}
+
+.experiencias p {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.habilidades-projetos {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.habilidades-projetos li {
+  background-color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+@media (max-width: 1200px) {
+  .experiencia {
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 1000px) {
+  #ano-proj {
+    position: initial;
+    order: 1;
+  }
+
+  #ano-proj::before {
+    content: "Ano: ";
+  }
+}
+
+@media (max-width: 768px) {
+  .experiencia {
+    display: flex;
+    flex-direction: column;
+    margin-top: initial;
+    padding: 20px;
+    text-align: center;
+  }
+
+  #exp {
+    font-size: 4rem;
+    max-width: initial;
+    color: #000;
+  }
+
+  .habilidades-projetos {
+    justify-content: center;
+  }
+
+  .habilidades-projetos li {
+    font-size: 0.7rem;
+    padding: 5px 10px;
+  }
+
+  .experiencia-subtitulo {
+    font-size: 1rem;
+  }
+
+  .experiencias a {
+    font-size: 0.7rem;
+    padding: 4px;
+  }
+
+  .habilidades-projetos {
+    gap: 10px;
+  }
+
+  #experiencia-conteudo-paragrafo {
+    font-size: 0.9rem;
+    line-height: 1.2;
+    max-width: initial;
+  }
+}
+
+@media (max-width: 425px) {
+  #exp {
+    font-size: 3rem;
+  }
+}

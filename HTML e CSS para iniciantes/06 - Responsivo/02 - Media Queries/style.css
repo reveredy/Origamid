@@ -1,0 +1,25 @@
+img {
+  max-width: 100%;
+}
+
+body {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+h1 {
+  grid-column: 1 / -1;
+}
+
+@media (max-width: 600px) {
+  body {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 100px) {
+  html {
+    font-size: 150%;
+  }
+}

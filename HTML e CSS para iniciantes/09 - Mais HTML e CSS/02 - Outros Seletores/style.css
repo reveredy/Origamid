@@ -1,0 +1,47 @@
+/* Seletores de atributos */
+[required] {
+  border: 2px solid tomato;
+} /* Seleciona tudo que contem o atributo required */
+p [required] {
+  border: 3px solid greenyellow;
+} /* Seleciona um atributo required que estiver dentro de uma tag p */
+
+p[required] {
+  border: 3px solid blue;
+} /* seleciona uma tag p que estiver required na p */
+
+[href^="#"] {
+  border: 2px solid #caf;
+} /* Seleciona todos os hrefs que comecem(^) com # */
+
+[href$=".com"] {
+  background: forestgreen;
+} /* Seleciona todos os hrefs que terminem($) com .com */
+
+[href="#contato"] {
+  background: wheat;
+} /* Seleciona href que estiver com o link #contato */
+
+/* Seletores de Sinais */
+
+section > h2 {
+  color: tomato;
+} /* Seleciona o h2 que for filho direto de section */
+
+p {
+  margin: 0;
+}
+
+article {
+  background: lightgreen;
+  padding: 10px;
+}
+
+p + p {
+  margin-top: 20px;
+} /* Seleciona os parágrafos que vierem após outro p
+ou que tiverem um p antes */
+
+* {
+  border: 2px solid rebeccapurple;
+} /* Seleciona todos os elementos do documento 1 por 1 */

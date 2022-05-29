@@ -1,0 +1,44 @@
+body {
+  font-size: 2rem;
+}
+
+.titulo {
+  color: tomato;
+  padding: 10px;
+} /* classe tem força 2 */
+
+#intro #servicos {
+  color: aqua;
+} /* 2 id's são mais fortes que 1, então novamente não importa a ordem */
+
+#servicos {
+  color: red;
+} /* esse seletor tem mais força por estar um nível acima das classes */
+
+.titulo.teste {
+  color: cornflowerblue;
+} /* o seletor de mesma força mas com maior quantidade é o que vai ser inserido, não importando a ordem, porque ele tem maior quantidade de mesma força, nesse caso classes */
+
+.titulo {
+  color: blue;
+} /* Nesse caso o blue será usado pq temos 2 seletores de mesma força, e nesse caso prevalece o último a ser inserido */
+
+#produtos {
+  color: lightgreen;
+} /* id tem força 1 */
+
+html body section h2 {
+  border-left: 8px solid greenyellow;
+} /* 4 seletores de nivel 3 */
+
+body section h2 {
+  border-left: 8px solid salmon;
+} /* 3 seletores de nível 3 não vai ser usado mesmo estando depois, pois o seletor de cima tem 4 seletores de mesma força */
+
+section h2#produtos {
+  color: blue;
+} /* vale esse seletor mesmo tendo menor quantidade de niveis 3, porque ele tem 1 id */
+
+.teste {
+  color: black !important;
+} /* important sobrescreve qualquer especificidade */

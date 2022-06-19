@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+#galeria {
+  max-width: 600px;
+  margin: 10px auto;
+}
+
+#galeria ul {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+#galeria li {
+  list-style: none;
+}
+
+#galeria li img {
+  border-radius: 5px 5px 0 0;
+}
+
+#principal {
+  border-radius: 0 0 5px 5px;
+}
